@@ -1,0 +1,38 @@
+{
+  "name": "toolkit",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && node scripts/prune.mjs",
+    "preview": "vite preview",
+    "deploy": "npm run build && npx firebase-tools deploy --only hosting"
+  },
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "dompurify": "^3.4.16",
+    "fonteditor-core": "^2.6.3",
+    "imagetracerjs": "^1.2.6",
+    "jszip": "^3.10.2",
+    "mammoth": "^1.13.0",
+    "marked": "^18.1.0",
+    "onnxruntime-web": "1.31.0-dev.20260914-8d85527a0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.4.299",
+    "tesseract.js": "^7.0.0",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2",
+    "upng-js": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/turndown": "^5.0.6",
+    "@types/upng-js": "^2.1.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3"
+  }
+}
